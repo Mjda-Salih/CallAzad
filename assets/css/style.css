@@ -1,0 +1,20 @@
+/* Custom Font and Colors */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.card-title {
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
