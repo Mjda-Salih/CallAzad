@@ -12,6 +12,22 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <meta
+      name="description"
+      content="Call Azad - Professional handyman services for all your home and business needs."
+    />
+    <meta
+      name="keywords"
+      content="handyman, DIY, painting, fittings, installations, professional services"
+    />
+    <meta property="og:title" content="Call Azad - Handyman Services" />
+    <meta
+      property="og:description"
+      content="Reliable and professional handyman services."
+    />
+    <meta property="og:image" content="assets/images/CallAzadHome.jpg" />
+    <meta property="og:url" content="https://iiEnchant.github.io/CallAzad/" />
   </head>
 
   <body>
@@ -61,7 +77,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
+    <section id="services" class="py-5 bg-light fade-in">
       <div class="container">
         <h2 class="text-center mb-4">Our Services</h2>
         <div class="row g-4">
@@ -74,13 +90,16 @@
                 alt="DIY Assistance"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">DIY Assistance</h5>
+                <h5 class="card-title fw-bold">
+                  <i class="bi bi-hammer"></i> DIY Assistance
+                </h5>
                 <p class="card-text">
-                  Minor fixes, furniture assembly, and DIY projects
+                  Minor fixes, furniture assembly, and DIY projects.
                 </p>
               </div>
             </div>
           </div>
+
           <!-- Card 2 -->
           <div class="col-md-4">
             <div class="card h-100 text-center shadow-sm">
@@ -113,6 +132,77 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">
+                  "Azad transformed our home with his excellent painting
+                  skills."
+                </p>
+                <footer class="blockquote-footer">John Doe</footer>
+              </blockquote>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">
+                  "The best handyman in town! Fast and reliable service."
+                </p>
+                <footer class="blockquote-footer">Jane Smith</footer>
+              </blockquote>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">
+                  "Highly recommend, fast and professional job!"
+                </p>
+                <footer class="blockquote-footer">Ishanti Yusuf</footer>
+              </blockquote>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="carousel-item">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">
+                  "Would use this service again and again, amazing job"
+                </p>
+                <footer class="blockquote-footer">Walt Scholes</footer>
+              </blockquote>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
@@ -185,5 +275,8 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
