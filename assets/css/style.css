@@ -3,6 +3,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
+section h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .navbar-brand {
   font-size: 1.5rem;
 }
@@ -31,10 +37,6 @@ html {
   transform: translateY(0);
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease;
-}
 .btn-primary:hover {
   background-color: #0056b3;
   color: #fff;
@@ -63,4 +65,63 @@ blockquote {
   border: none;
   border-radius: 10px;
   background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #343a40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link.active {
+  color: #fff;
+  font-weight: bold;
+  background-color: #0056b3; /* Matches the button hover */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.hero-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card:nth-child(odd) {
+  background-color: #f8f9fa; /* Light gray */
+}
+.card:nth-child(even) {
+  background-color: #ffffff; /* White */
+}
+.card-img-top {
+  width: 400px; /* Explicitly sets the width */
+  height: 200px; /* Explicitly sets the height */
+  object-fit: cover; /* Ensures images are cropped proportionally to fit */
+  margin: 0 auto; /* Centers the image within the card */
+}
+#services {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Add space between rows 
+.row > .col-md-4 {
+  margin-bottom: 16px; /* Adds vertical spacing between rows 
+}
+
+/* Adjust overall padding around cards 
+.row {
+  gap: 16px; /* Ensures consistent spacing 
+} */
