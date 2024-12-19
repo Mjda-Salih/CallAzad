@@ -63,17 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const carouselContent = document.getElementById("carouselContent");
 
-  // Dynamically create slides
   testimonials.forEach((testimonial, index) => {
-    const isActive = index === 0 ? "active" : ""; // Make the first item active
-    const slide = `
-      <div class="carousel-item ${isActive}">
-        <blockquote class="blockquote text-center">
-          <p class="mb-4">"${testimonial.text}"</p>
-          <footer class="blockquote-footer">${testimonial.author}</footer>
-        </blockquote>
-      </div>
+    const slide = document.createElement("div");
+    slide.className = `carousel-item ${index === 0 ? "active" : ""}`;
+    slide.innerHTML = `
+      <blockquote class="blockquote text-center">
+        <p class="mb-4">&ldquo;${testimonial.text}&rdquo;</p>
+        <footer class="blockquote-footer">${testimonial.author}</footer>
+      </blockquote>
     `;
-    carouselContent.insertAdjacentHTML("beforeend", slide);
+    carouselContent.appendChild(slide);
   });
 });

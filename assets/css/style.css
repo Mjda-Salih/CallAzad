@@ -161,6 +161,46 @@ form textarea:focus {
   color: #fff;
 }
 
+/* Testimonials Section Styles */
+#testimonials {
+  background-color: #f8f9fa;
+}
+
+.testimonial-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item blockquote {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #555;
+}
+
+.carousel-item blockquote p {
+  margin-bottom: 1rem;
+}
+
+.carousel-item blockquote footer {
+  font-weight: bold;
+  color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Add space between rows */
 /* .row > .col-md-4 { 
 /*   margin-bottom: 16px; /* Adds vertical spacing between rows */
