@@ -220,55 +220,79 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Contact Us</h2>
-        <p class="text-center lead">Have a project in mind? Let us know!</p>
+        <h2 class="text-center mb-4 display-5 fw-bold">Contact Us</h2>
+        <p class="text-center lead mb-5">
+          Have a project in mind? Let us know, and we’ll get back to you!
+        </p>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form action="https://formspree.io/f/mldeyekg" method="POST">
-              <!-- Redirect After Submission -->
-              <input type="hidden" name="_redirect" value="/index.html" />
+            <!-- Form Card -->
+            <div class="card shadow-lg border-0">
+              <div class="card-body p-4">
+                <form action="https://formspree.io/f/mldeyekg" method="POST">
+                  <!-- Redirect After Submission -->
+                  <input type="hidden" name="_redirect" value="/index.html" />
 
-              <div class="mb-3">
-                <label for="name" class="form-label">Your Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  required
-                />
+                  <!-- Name Field -->
+                  <div class="mb-4">
+                    <label for="name" class="form-label fw-bold"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control rounded-pill p-3"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="mb-4">
+                    <label for="email" class="form-label fw-bold"
+                      >Your Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control rounded-pill p-3"
+                      id="email"
+                      name="_replyto"
+                      placeholder="Enter your email address"
+                      required
+                    />
+                  </div>
+
+                  <!-- Message Field -->
+                  <div class="mb-4">
+                    <label for="message" class="form-label fw-bold"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control p-3 rounded-4"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Write your message here..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-dark rounded-pill px-4 py-2"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Your Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="_replyto"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Write your message here"
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </div>
-            </form>
+            </div>
+            <!-- End of Card -->
           </div>
         </div>
       </div>

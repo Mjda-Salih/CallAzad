@@ -150,6 +150,17 @@ blockquote {
   transform: translateY(0) !important;
 }
 
+form input:focus,
+form textarea:focus {
+  border-color: #0056b3; /* Blue focus outline */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.3);
+}
+
+.btn-dark:hover {
+  background-color: #000; /* Solid black on hover */
+  color: #fff;
+}
+
 /* Add space between rows */
 /* .row > .col-md-4 { 
 /*   margin-bottom: 16px; /* Adds vertical spacing between rows */
